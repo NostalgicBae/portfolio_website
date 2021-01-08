@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+}
+
+.col-1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+/*************** Navbar **************/
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    padding-bottom: 2rem;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#name {
+    float: left;
+    word-spacing: 0.3rem;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 4px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+/*************** Introduction **************/
+  
+.introduction {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 6rem;
+}
+  
+.introduction > article {
+    flex: 3;
+    font-size: 6em;
+}
+
+.introduction span {
+    font-style: italic;
+}
+  
+.introduction > aside {
+    flex: 1;
+}
+
+.introduction .portrait {
+    padding: 4vh 8vh;
+    max-width: 700px;
+    max-height: 900px;
+    border-radius: 17%;
+}
+
+/*************** Projects **************/
+.portfolio {
+    padding: 60px 30px;
+}
+
+.portfolio h1 {
+    margin-left: 40px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    flex: 0 1 24%;
+    border-radius: 2%;
+    background-color: white;
+
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    height: 400px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card p {
+    font-weight: bold;
+}
+
+.card .description {
+    font-weight: normal;
+}
+
+.card .portfolio-button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #333;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 15px;
+    width: 180px;
+    transition: all 0.5s;
+    cursor: pointer;
+    bottom: 0;
+}
+  
+.card .portfolio-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.card .portfolio-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.card .portfolio-button:hover span {
+    padding-right: 25px;
+}
+  
+.card .portfolio-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/*************** About Me **************/
+
+.about-me {
+    padding: 60px 30px;
+}
+
+.about-me h1{
+    padding: 30px;
+}
+
+.about-me h2{
+    padding: 0px 200px;
+}
+
+.about-me p{
+    padding: 0px 200px;
+    font-size: x-large;
+}
+
+.portfolio h1 {
+    margin-left: 40px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.google-maps {
+    text-decoration: none;
+    color: black;
+}
+
+/*************** Contact **************/
+
+.contact {
+    padding: 60px 30px;
+}
+
+.contact h1{
+    padding: 30px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    font-size: x-large;
+}
+
+.contact-left{
+    list-style: none;
+    line-height: 35px;
+}
+
+.contact-right ul{
+    list-style: none;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25%;
+    float: left;
+    margin: 10px 5px;
+    width: 60px;
+}
+  
+  /* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+  
+  /* Twitter */
+.fa-linkedin {
+    background: #55ACEE;
+    color: white;
+}
+
+/*************** Footer **************/
+
+header, footer {
+    height: 20vh;
+}
+  
+header, footer, article, nav, aside {
+    padding: 1em;
+}
